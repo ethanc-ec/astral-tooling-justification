@@ -25,7 +25,11 @@ There are two primary reasons why `Ruff` would be beneficial for the courses at 
 3. Automatic Code Format Fixing (via CLI)
     - With `ruff format`, students can automatically fix their code formatting issues. It does not do any linting, but if there is some code that could be formatted in a more readible way, `ruff format` will do it for you without changing any functionality.
     - You can see an example of this in [this commit at the WLFC Repo](https://github.com/BU-Spark/ml-wlfc-image/commit/874613937c73391be937ce495ba4b32ae92c77bf)
-        - The change is not significant, but that small modification makes the code more readable.
+      - The change is not significant, but that small modification makes the code more readable.
+
+- [Ruff Documentation](https://ruff.readthedocs.io/en/latest/)
+- [Possible Ruff Linting Rules](https://docs.astral.sh/ruff/rules/)
+  - An example of the Ruff rules can be seen in the `example.pyproject.toml` file under all headers that contain `[tool.ruff]`
 
 ## uv
 

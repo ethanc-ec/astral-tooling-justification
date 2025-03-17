@@ -1,0 +1,50 @@
+[project]
+name = "ml-wlfc-image"
+version = "0.1.0"
+description = "Media Classification Pipeline by BU Spark for WLFC"
+authors = [{ name = "Boston University Spark!", email = "buspark@bu.edu"}]
+readme = "README.md"
+requires-python = ">=3.12, <4.0"
+license = { file = "LICENSE" }
+dependencies = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.0",
+]
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".ipynb_checkpoints",
+    ".ruff_cache",
+    ".venv",
+]
+line-length = 105
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle (error)
+    "F", # pyflakes
+    "B", # bugbear
+    "C4", # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "I", # isort
+    "UP", # pyupgrade
+    "PIE", # flake8-pie
+    "PGH", # pygrep-hooks
+    "PYI", # flake8-pyi
+    "RUF", # Ruff-specific
+]
+ignore = [
+]
+
+[tool.ruff.format]
+quote-style = "double"
